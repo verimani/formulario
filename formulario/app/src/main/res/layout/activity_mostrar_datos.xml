@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".MostrarDatos">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moatrartitu"
+        android:textSize="@dimen/tamano_titulo"
+        android:textStyle="italic"
+        android:layout_gravity="center"
+
+
+        />
+
+
+    <TextView
+        android:id="@+id/tvnombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_espacio"
+        android:textSize="@dimen/tamano_mostrardatos"
+        android:text="@string/nombre"
+        />
+
+    <TextView
+        android:id="@+id/tvfechanac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editnombre"
+        android:textSize="@dimen/tamano_mostrardatos"
+        android:layout_marginTop="@dimen/top_espacio"
+        android:text="@string/fechanac"
+        />
+
+    <TextView
+        android:id="@+id/tvtelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvfechanac"
+        android:textSize="@dimen/tamano_mostrardatos"
+        android:layout_marginTop="@dimen/top_espacio"
+        android:text="@string/telefono"
+        />
+
+    <TextView
+        android:id="@+id/tvemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvtelefono"
+        android:textSize="@dimen/tamano_mostrardatos"
+        android:layout_marginTop="@dimen/top_espacio"
+        android:text="@string/email"
+        />
+
+    <TextView
+        android:id="@+id/tvdescr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvemail"
+        android:textSize="@dimen/tamano_mostrardatos"
+        android:layout_marginTop="@dimen/top_espacio"
+        android:text="@string/descrp"
+        />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_btnok"
+        android:theme="@style/btnRaised"
+        android:layout_marginTop="@dimen/top_espacio"
+        android:layout_below="@id/tvdescr"
+        />
+
+</LinearLayout>

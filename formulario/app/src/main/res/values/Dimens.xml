@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tamano_titulo">28dp</dimen>
+    <dimen name="top_espacio">35dp</dimen>
+    <dimen name="tamano_mostrardatos">20dp</dimen>
+
+</resources>

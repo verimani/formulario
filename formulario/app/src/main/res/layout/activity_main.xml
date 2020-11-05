@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo"
+        android:textSize="@dimen/tamano_titulo"
+        android:textStyle="italic"
+        android:layout_gravity="center"
+        />
+
+
+    <EditText
+        android:id="@+id/editnombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_espacio"
+        android:hint="@string/nombre"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/editfechanac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editnombre"
+        android:hint="@string/fechanac"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/edittelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editfechanac"
+        android:hint="@string/telefono"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/editemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittelefono"
+        android:hint="@string/email"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/editdescr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editemail"
+        android:hint="@string/descrp"
+        android:inputType="text"
+        />
+
+    <Button
+        android:id="@+id/btnBoton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_textobtn"
+        android:theme="@style/btnRaised"
+        android:layout_below="@id/editdescr"
+        />
+
+</LinearLayout>
